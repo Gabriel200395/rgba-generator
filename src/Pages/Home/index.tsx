@@ -52,15 +52,14 @@ const Home: React.FC = () => {
   }, [horas]);
 
   return (
-    <div className={`${tema ? "tema-escuro" : "home-p"}`}>
+    <div className={`${tema ? "tema-escuro" : "home-p"}`} data-testid="container-page">
       <h2>Gerador RGB</h2>
       <div className="container-data">
         <div className="icon-lapis" />
-        <p>
+         <p>
           {dia}/{mes}/{ano} - {horas >= 0 && horas <= 9 ? "0" + horas : horas}:
           {minutos >= 0 && minutos <= 9 ? "0" + minutos : minutos}
-        </p>
-        <p></p>
+        </p> 
       </div>
       <div className="container-rgba">
         <div className="grid-input">

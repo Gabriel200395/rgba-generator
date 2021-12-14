@@ -1,4 +1,4 @@
-import { screen, fireEvent, render } from "@testing-library/react";
+import { screen, fireEvent, render, waitFor } from "@testing-library/react";
 import Home from "../Pages/Home/index";
 
 test("DEFAULT APP", () => {
@@ -49,3 +49,12 @@ test("FUNÇÕES APP", () => {
   ).toEqual(`rgba(${input1.value},${input2.value},${input3.value})`);
 });
 
+test("FUNÇÕES TEMA PAGE", async () => {
+  render(<Home />);
+  expect(
+    screen.getByTestId("container-page").classList.contains("home-p")
+  ).toEqual(false);
+  expect(
+    screen.getByTestId("container-page").classList.contains("tema-escuro")
+  ).toEqual(true);
+});
