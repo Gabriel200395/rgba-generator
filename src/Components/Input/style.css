@@ -1,0 +1,34 @@
+.grid-input {
+    display: grid;
+    grid-template-columns: repeat(3, minMax(0, 160px));
+    margin-bottom: 50px;
+    grid-gap: 10px;
+  }
+  
+  .rosa {
+    background-color: #ff817e;
+    height: 48px;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .verde {
+    background-color: #3fb73d;
+    height: 48px;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .azul {
+    background-color: #515aab;
+    height: 48px;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
