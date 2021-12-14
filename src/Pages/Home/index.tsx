@@ -58,7 +58,7 @@ const Home: React.FC = () => {
     if (horas === 18 && minutos > 0) {
       setTema(true);
     }
-  }, [horas]);
+  }, [horas, minutos]);
 
   return (
     <div

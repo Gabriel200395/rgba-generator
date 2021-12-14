@@ -1,4 +1,4 @@
-import { screen, fireEvent, render, waitFor } from "@testing-library/react";
+import { screen, fireEvent, render } from "@testing-library/react";
 import Home from "../Pages/Home/index";
 
 test("DEFAULT APP", () => {
