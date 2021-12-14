@@ -57,8 +57,8 @@ const Home: React.FC = () => {
       <div className="container-data">
         <div className="icon-lapis" />
         <p>
-          {dia}/{mes}/{ano} - {horas > 0 && horas <= 9 ? "0" + horas : horas}:
-          {minutos > 0 && minutos <= 9 ? "0" + minutos : minutos}
+          {dia}/{mes}/{ano} - {horas >= 0 && horas <= 9 ? "0" + horas : horas}:
+          {minutos >= 0 && minutos <= 9 ? "0" + minutos : minutos}
         </p>
         <p></p>
       </div>

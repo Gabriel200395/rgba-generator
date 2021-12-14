@@ -48,3 +48,4 @@ test("FUNÇÕES APP", () => {
     (container.style.backgroundColor = `rgba(${input1.value},${input2.value},${input3.value})`)
   ).toEqual(`rgba(${input1.value},${input2.value},${input3.value})`);
 });
+
