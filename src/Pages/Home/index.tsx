@@ -57,7 +57,7 @@ const Home: React.FC = () => {
       <div className="container-data">
         <div className="icon-lapis" />
         <p>
-          {dia}/{mes}/{ano} - {horas}:
+          {dia}/{mes}/{ano} - {horas > 0 && horas <= 9 ? "0" + horas : horas}:
           {minutos > 0 && minutos <= 9 ? "0" + minutos : minutos}
         </p>
         <p></p>
@@ -68,25 +68,29 @@ const Home: React.FC = () => {
             className="rosa"
             name="rosa"
             state={cores.rosa}
-            onChange={handleChange}
+            onChange={handleChange} 
+            data-testid="rosa"  
           />
           <Input
             className="verde"
             name="verde"
             state={cores.verde}
             onChange={handleChange}
+            data-testid="verde"
           />
           <Input
             className="azul"
             name="azul"
             state={cores.azul}
-            onChange={handleChange}
+            onChange={handleChange} 
+            data-testid="azul"
           />
         </div>
         <div
+          data-testid="container-rgba"
           className="container-radius"
           style={{
-            backgroundColor: `rgba(${cores.rosa},${cores.verde},${cores.azul})`,
+             backgroundColor: `rgba(${cores.rosa},${cores.verde},${cores.azul})` 
           }}
         />
         <p>

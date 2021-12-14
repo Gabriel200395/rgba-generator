@@ -10,7 +10,7 @@ interface InputProps {
 }
 
 
-const Input: React.FC<InputProps> = ({className, state, onChange, name}) => {
+const Input: React.FC<InputProps> = ({className, state, onChange, name, ...props}) => {
   return (
     <div className={className}>
     <input
@@ -20,6 +20,7 @@ const Input: React.FC<InputProps> = ({className, state, onChange, name}) => {
       onChange={onChange}
       min="0"
       max="255"
+      {...props}
     />
   </div>
   );
