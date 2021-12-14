@@ -36,8 +36,17 @@ const Home: React.FC = () => {
   ];
 
   const data = new Date();
-  const horas = data.getHours();
-  const minutos = data.getMinutes();
+  
+  const horas =
+    data.getHours() >= 0 && data.getHours() <= 9
+      ? "0" + data.getHours()
+      : data.getHours();
+  
+      const minutos =
+    data.getMinutes() >= 0 && data.getMinutes() <= 9
+      ? "0" + data.getMinutes()
+      : data.getMinutes();
+
   const dia = data.getDate();
   const ano = data.getFullYear();
   const mes = monName[data.getMonth()];
@@ -52,14 +61,16 @@ const Home: React.FC = () => {
   }, [horas]);
 
   return (
-    <div className={`${tema ? "tema-escuro" : "home-p"}`} data-testid="container-page">
+    <div
+      className={`${tema ? "tema-escuro" : "home-p"}`}
+      data-testid="container-page"
+    >
       <h2>Gerador RGB</h2>
       <div className="container-data">
         <div className="icon-lapis" />
-         <p>
-          {dia}/{mes}/{ano} - {horas >= 0 && horas <= 9 ? "0" + horas : horas}:
-          {minutos >= 0 && minutos <= 9 ? "0" + minutos : minutos}
-        </p> 
+        <p>
+          {dia}/{mes}/{ano} - {horas}:{minutos}
+        </p>
       </div>
       <div className="container-rgba">
         <div className="grid-input">
@@ -67,8 +78,8 @@ const Home: React.FC = () => {
             className="rosa"
             name="rosa"
             state={cores.rosa}
-            onChange={handleChange} 
-            data-testid="rosa"  
+            onChange={handleChange}
+            data-testid="rosa"
           />
           <Input
             className="verde"
@@ -81,7 +92,7 @@ const Home: React.FC = () => {
             className="azul"
             name="azul"
             state={cores.azul}
-            onChange={handleChange} 
+            onChange={handleChange}
             data-testid="azul"
           />
         </div>
@@ -89,7 +100,7 @@ const Home: React.FC = () => {
           data-testid="container-rgba"
           className="container-radius"
           style={{
-             backgroundColor: `rgba(${cores.rosa},${cores.verde},${cores.azul})` 
+            backgroundColor: `rgba(${cores.rosa},${cores.verde},${cores.azul})`,
           }}
         />
         <p>
