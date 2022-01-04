@@ -1,46 +1,67 @@
-# Getting Started with Create React App
+<h1 align="center">Gerador de RGBA</h1>  
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<h4 align="center">
+  <img src="/src/assets/images/rgba.gif"/><br>
+</h4>
 
-## Available Scripts
+<p align="center">
+  <a href="#tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-como-usar">Como usar</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#pencil-autor">Autor</a>
+</p>
 
-In the project directory, you can run:
+## :wrench: Tecnologias
 
-### `yarn start`
+<!--EXEMPLO:-->
+- [React](https://pt-br.reactjs.org/)
+- [React-library](https://testing-library.com/docs/react-testing-library/api/)
+- [Typescript](https://www.typescriptlang.org/)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## 💻 Como usar
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+- Clone o projeto: `git clone https://github.com/Gabriel200395/gerador-rgba.git`
+- Entrar na pasta do projeto: `cd gerador-rgba`
+- Iniciar a aplicação: `yarn start`
+- baixe na aplicação:  `yarn install` 
+- Irá abrir uma página no browser (se não abrir, vá até [http://localhost:3000](http://localhost:300/)).
 
-### `yarn test`
+## :pencil: Autor
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+<table>
+  <tr>
+    <td align="center"><a href="https://github.com/Gabriel200395"><img src="https://avatars2.githubusercontent.com/u/68435908?s=400&u=9cbee30d93471534b2bd12a6364edd45e618b923&v=4" width="100px;" alt=""/><br /><sub><b>Gabriel Souza</b></sub></a><br /></td>
+  <tr>
+</table>
+<h1 align="center">Shop Website</h1>  
 
-### `yarn build`
+<h4 align="center">
+  <img src="/src/assets/images/shop.gif"/><br>
+</h4>
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+<p align="center">
+  <a href="#tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-como-usar">Como usar</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#pencil-autor">Autor</a>
+</p>
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## :wrench: Tecnologias
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+<!--EXEMPLO:-->
+- [React](https://pt-br.reactjs.org/)
+- [React-library](https://testing-library.com/docs/react-testing-library/api/)
 
-### `yarn eject`
+## 💻 Como usar
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+- Clone o projeto: `git clone https://github.com/Gabriel200395/shop-website.git`
+- Entrar na pasta do projeto: `cd shop-website`
+- Iniciar a aplicação: `yarn start`
+- baixe na aplicação:  `yarn install` 
+- Irá abrir uma página no browser (se não abrir, vá até [http://localhost:3000](http://localhost:300/)).
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## :pencil: Autor
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+<table>
+  <tr>
+    <td align="center"><a href="https://github.com/Gabriel200395"><img src="https://avatars2.githubusercontent.com/u/68435908?s=400&u=9cbee30d93471534b2bd12a6364edd45e618b923&v=4" width="100px;" alt=""/><br /><sub><b>Gabriel Souza</b></sub></a><br /></td>
+  <tr>
+</table>
