@@ -3,6 +3,8 @@
     grid-template-columns: repeat(3, minMax(0, 160px));
     margin-bottom: 50px;
     grid-gap: 10px;
+    padding-left: 10px; 
+    padding-right: 10px;
   }
   
   .rosa {

@@ -20,7 +20,7 @@ const Home: React.FC = () => {
   const handleChange = (event: ChangeEvent<HTMLInputElement>) =>
     setCores({ ...cores, [event.target.name]: event.target.value });
 
-  const monName = [
+  const monName:string[] = [
     "01",
     "02",
     "03",
@@ -52,13 +52,17 @@ const Home: React.FC = () => {
   const mes = monName[data.getMonth()];
 
   useEffect(() => {
-    if (horas > 6 && horas <= 18) {
-      setTema(false);
+    if (horas < 18) {
+      setTema(false); 
     }
-    if (horas === 18 && minutos > 0) {
+    if (horas >= 18 && minutos >= 0) {
       setTema(true);
     }
-  }, [horas, minutos]);
+  }, [horas, minutos]); 
+
+
+
+
 
   return (
     <div
