@@ -1,6 +1,7 @@
-import "./style.css";
 import { ChangeEvent, useEffect, useState } from "react";
 import Input from "../../Components/Input/Input";
+import { hours, minutes, dataFormat } from "../../helpers/functions_data";
+import "./style.css";
 
 type CorProps = {
   rosa: number;
@@ -20,49 +21,14 @@ const Home: React.FC = () => {
   const handleChange = (event: ChangeEvent<HTMLInputElement>) =>
     setCores({ ...cores, [event.target.name]: event.target.value });
 
-  const monName:string[] = [
-    "01",
-    "02",
-    "03",
-    "04",
-    "05",
-    "06",
-    "07",
-    "08",
-    "09",
-    "10",
-    "11",
-    "12",
-  ];
-
-  const data = new Date();
-  
-  const horas =
-    data.getHours() >= 0 && data.getHours() <= 9
-      ? "0" + data.getHours()
-      : data.getHours();
-  
-      const minutos =
-    data.getMinutes() >= 0 && data.getMinutes() <= 9
-      ? "0" + data.getMinutes()
-      : data.getMinutes();
-
-  const dia = data.getDate() <= 9  ?  "0" + data.getDate() : data.getDate() ;
-  const ano = data.getFullYear();
-  const mes = monName[data.getMonth()];
-
   useEffect(() => {
-    if (horas < 18) {
-      setTema(false); 
+    if (hours < 18) {
+      setTema(false);
     }
-    if (horas >= 18 && minutos >= 0) {
+    if (hours >= 18 && minutes >= 0) {
       setTema(true);
     }
-  }, [horas, minutos]); 
-
-
-
-
+  }, [hours, minutes]);
 
   return (
     <div
@@ -72,9 +38,7 @@ const Home: React.FC = () => {
       <h2>Gerador RGB</h2>
       <div className="container-data">
         <div className="icon-lapis" />
-        <p>
-          {dia}/{mes}/{ano} - {horas}:{minutos}
-        </p>
+        <p>{dataFormat}</p>
       </div>
       <div className="container-rgba">
         <div className="grid-input">
