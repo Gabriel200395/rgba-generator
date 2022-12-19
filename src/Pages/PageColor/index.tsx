@@ -7,9 +7,7 @@ export default function PageColor() {
   const { theme, fields, colors } = useColors();
 
   return (
-    <div
-      className={`${theme ? "theme-page" : "page-default"}`}
-    >
+    <div className={`${true ? "theme-page" : "page-default"}`}>
       <h2>Gerador RGB</h2>
       <div className="container-data">
         <div className="icon-lapis" />
@@ -41,4 +39,4 @@ export default function PageColor() {
       </div>
     </div>
   );
-};
+}
