@@ -1,4 +1,4 @@
-<h1 align="center">Pokedex</h1>
+<h1 align="center">Rgba</h1>
 <h4 align="center">
   <img src="./public/pokemon.gif"/><br>
 </h4>
