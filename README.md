@@ -1,6 +1,6 @@
 <h1 align="center">RGBA GENERATOR</h1>
 <h4 align="center">
-  <img src="./public/pokemon.gif"/><br>
+  <img src="./public/rgba-tela.gif"/><br>
 </h4>
 
 <p align="center">
