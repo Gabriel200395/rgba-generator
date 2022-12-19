@@ -5,7 +5,7 @@
   overflow-y: hidden;
 }
 
-.home-p {
+.page-default {
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -15,7 +15,7 @@
   padding-bottom: 20px;
 }
 
-.home-p h2 {
+.page-default h2 {
   margin-top: 10px;
   margin-bottom: 39px;
   font-family: IBM Plex Mono;
@@ -76,7 +76,7 @@
   margin-bottom: 48px;
 }
 
-.tema-escuro {
+.theme-page {
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -88,7 +88,7 @@
   padding-right: 20px;
 }
 
-.tema-escuro h2 {
+.theme-page h2 {
   margin-top: 10px;
   margin-bottom: 39px;
   font-family: IBM Plex Mono;
@@ -98,26 +98,26 @@
   color: #fff;
 }
 
-.tema-escuro .container-data {
+.theme-page .container-data {
   background-color: #44474e;
 }
 
-.tema-escuro .container-rgba {
+.theme-page .container-rgba {
   background-color: #44474e;
 }
 
-.tema-escuro .container-data p {
+.theme-page .container-data p {
   color: #fff;
 }
 
-.tema-escuro .container-rgba p {
+.theme-page .container-rgba p {
   font-family: IBM Plex Mono;
   font-style: normal;
   font-weight: bold;
   color: #fff;
 }
 
-.tema-escuro .icon-lapis {
+.theme-page .icon-lapis {
   background-image: url("../../assets/icon/light.png");
   background-repeat: no-repeat;
   height: 20px;
