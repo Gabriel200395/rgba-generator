@@ -3,7 +3,7 @@ import { dataFormat } from "../../helpers/functions_data";
 import "./style.css";
 import useColors from "./useColors";
 
-const Home: React.FC = () => {
+export default function PageColor() {
   const { theme, fields, colors } = useColors();
 
   return (
@@ -43,5 +43,3 @@ const Home: React.FC = () => {
     </div>
   );
 };
-
-export default Home;

@@ -1,4 +1,4 @@
-import Home from "./Pages/Home";
+import Home from "./Pages/PageColor";
 
 function App() {
   return <Home />;

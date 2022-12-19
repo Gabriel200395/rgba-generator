@@ -1,5 +1,5 @@
 import { screen, fireEvent, render } from "@testing-library/react";
-import App from "../Pages/Home/index";
+import App from "../Pages/PageColor/index";
 
 beforeEach(() => render(<App />));
 
