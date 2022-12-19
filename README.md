@@ -39,16 +39,16 @@ Irá abrir uma página no browser (se não abrir, vá até [http://localhost:300
 <h3 align="left">Tema Pagina 😎.</h3>
 <h4 align="left">
   <img src="./public/tela_tema.png" /><br>
-</h4>
+</h4> 
 
-<h3 align="left">Aplicação responsivo ❤.</h3>
+<h3 align="left">Hook useColors ❤❤.</h3> 
 <h4 align="left">
-  <img src="./public/tela_responsiva.png" /><br>
+  <img src="./public/hoo.png" /><br>
 </h4>
 
 <h3 align="left">Testando aplicação ❤.</h3> 
 <h4 align="left">
-  <img src="./public/Tela_teste.png" /><br>
+  <img src="./public/teste.png" /><br>
 </h4>
 ## :pencil: Autor
 

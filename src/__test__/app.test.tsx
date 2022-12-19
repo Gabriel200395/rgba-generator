@@ -1,4 +1,4 @@
-import { screen, fireEvent, render } from "@testing-library/react";
+import { screen, fireEvent, render, waitFor } from "@testing-library/react";
 import App from "../Pages/PageColor";
 
 beforeEach(() => render(<App />));
