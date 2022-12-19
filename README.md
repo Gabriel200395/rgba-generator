@@ -45,7 +45,7 @@ Irá abrir uma página no browser (se não abrir, vá até [http://localhost:300
 
 <h3 align="left">Hook useColors ❤❤.</h3>
 <h4 align="left">
-  <img src="./public/tela_responsiva.png" /><br>
+  <img src="./public/hoo.png" /><br>
 </h4>
 
 <h3 align="left">Testando aplicação ❤.</h3> 
