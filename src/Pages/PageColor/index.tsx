@@ -9,6 +9,7 @@ export default function PageColor() {
   return (
     <div
       className={`${theme ? "theme-page" : "page-default"}`}
+      data-testid="container-page"
     >
       <h2>Gerador RGB</h2>
       <div className="container-data">
