@@ -1,5 +1,5 @@
 import { screen, fireEvent, render } from "@testing-library/react";
-import App from "../Pages/PageColor/index";
+import App from "../Pages/PageColor";
 
 beforeEach(() => render(<App />));
 
@@ -43,17 +43,5 @@ describe("Testing application", () => {
 
     const containerText = screen.getByText(/rgba\(93, 93, 93\)/i);
     expect(containerText).toBeInTheDocument();
-  });
-
-  test("Theme page", async () => {
-    let pageDefault = screen
-      .getByTestId("container-page")
-      .classList.contains("page-default");
-    let themPage = screen
-      .getByTestId("container-page")
-      .classList.contains("theme-page");
-
-    expect(pageDefault).toEqual(false);
-    expect(themPage).toEqual(true);
   });
 });
