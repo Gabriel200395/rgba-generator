@@ -1,10 +1,10 @@
 import { screen, fireEvent, render } from "@testing-library/react";
-import Home from "../Pages/Home/index";
+import App from "../Pages/Home/index";
+
+beforeEach(() => render(<App />));
 
 describe("Testing application", () => {
   test("Application default", () => {
-    render(<Home />);
-
     const fieldPink = screen.getByDisplayValue("93");
     const fieldGreen = screen.getByDisplayValue("121");
     const fieldBlue = screen.getByDisplayValue("184");
@@ -16,8 +16,6 @@ describe("Testing application", () => {
   });
 
   test("Event field application", () => {
-    render(<Home />);
-
     const fieldPink = screen.getByDisplayValue("93");
     const fieldGreen = screen.getByDisplayValue("121");
     const fieldBlue = screen.getByDisplayValue("184");
@@ -48,8 +46,6 @@ describe("Testing application", () => {
   });
 
   test("Theme page", async () => {
-    render(<Home />);
-
     let pageDefault = screen
       .getByTestId("container-page")
       .classList.contains("page-default");
