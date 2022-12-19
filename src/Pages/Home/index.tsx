@@ -1,38 +1,10 @@
-import { ChangeEvent, useEffect, useState } from "react";
 import Input from "../../Components/Input/Input";
-import { hours, minutes, dataFormat } from "../../helpers/functions_data";
+import { dataFormat } from "../../helpers/functions_data";
 import "./style.css";
-
-type CorProps = {
-  pink: number;
-  green: number;
-  blue: number;
-};
+import useColors from "./useColors";
 
 const Home: React.FC = () => {
-  const [cores, setCores] = useState<CorProps>({
-    pink: 93,
-    green: 121,
-    blue: 184,
-  });
-
-  const [theme, setTheme] = useState(false);
-
-  const handleChange = (event: ChangeEvent<HTMLInputElement>) =>
-    setCores({ ...cores, [event.target.name]: event.target.value });
-
-  function schedule() {
-    if (hours < 18) {
-      setTheme(false);
-    }
-    if (hours >= 18 && minutes >= 0) {
-      setTheme(true);
-    }
-  }
-
-  useEffect(() => {
-    schedule();
-  }, [hours, minutes]);
+  const { theme, fields, colors } = useColors();
 
   return (
     <div
@@ -46,33 +18,26 @@ const Home: React.FC = () => {
       </div>
       <div className="container-rgba">
         <div className="grid-input">
-          <Input
-            className="pink"
-            name="pink"
-            state={cores.pink}
-            onChange={handleChange}
-          />
-          <Input
-            className="green"
-            name="green"
-            state={cores.green}
-            onChange={handleChange}
-          />
-          <Input
-            className="blue"
-            name="blue"
-            state={cores.blue}
-            onChange={handleChange}
-          />
+          {fields.map((field, index) => {
+            return (
+              <Input
+                key={index}
+                className={field.classField}
+                name={field.nameField}
+                state={field.stateField}
+                onChange={field.changeField}
+              />
+            );
+          })}
         </div>
         <div
           className="container-radius"
           style={{
-            backgroundColor: `rgba(${cores.pink},${cores.green},${cores.blue})`,
+            backgroundColor: `rgba(${colors.pink},${colors.green},${colors.blue})`,
           }}
         />
         <p>
-          rgba({cores.pink}, {cores.green}, {cores.blue})
+          rgba({colors.pink}, {colors.green}, {colors.blue})
         </p>
       </div>
     </div>
