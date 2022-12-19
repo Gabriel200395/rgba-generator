@@ -1,4 +1,4 @@
-<h1 align="center">Pokedex</h1>
+<h1 align="center">RGBA GENERATOR</h1>
 <h4 align="center">
   <img src="./public/pokemon.gif"/><br>
 </h4>
@@ -23,8 +23,8 @@
 
 ## 💻 Como usar
 
-- Clone o projeto: `git clone https://github.com/Gabriel200395/pokedex.git`
-- Entrar na pasta do projeto: `cd pokedex`
+- Clone o projeto: `git clone https://github.com/Gabriel200395/rgba-generator.git`
+- Entrar na pasta do projeto: `cd rgba-generator`
 - Iniciar a aplicação: `yarn start`
 - baixe na aplicação: `yarn`
 - testa aplicação: `yarn test`
@@ -35,27 +35,22 @@ Irá abrir uma página no browser (se não abrir, vá até [http://localhost:300
 
 <h3 align="left">Tela inicial 😍.</h3>
 <h4 align="left">
-  <img src="./public/pagina_inicial.png" /><br>
+  <img src="./public/tela_inicial.png" /><br>
 </h4>
 
-<h3 align="left">Buscar pokemon 😎.</h3>
+<h3 align="left">Tela com tema😎.</h3>
 <h4 align="left">
-  <img src="./public/tela_filtro.png" /><br>
+  <img src="./public/tela_tema.png" /><br>
 </h4>
 
-<h3 align="left">Erro em buscar pokemon 👀.</h3>
-<h4 align="left">
-  <img src="./public/tela_erro_buscar.png" /><br>
-</h4>
-
-<h3 align="left">Aplicação responsivo ❤.</h3>
+<h3 align="left">Hook useColors ❤❤.</h3>
 <h4 align="left">
   <img src="./public/tela_responsiva.png" /><br>
 </h4>
 
 <h3 align="left">Testando aplicação ❤.</h3> 
 <h4 align="left">
-  <img src="./public/Tela_teste.png" /><br>
+  <img src="./public/teste.png" /><br>
 </h4>
 ## :pencil: Autor
 
