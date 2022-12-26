@@ -23,7 +23,7 @@
 
 Projeto que desenvolvi com o objetivo de melhorar minhas habilidades e conhecimentos tanto em ReactJS quanto em programação Web em geral. O projeto é baseado em um gerador de rgba nele pode ser gerados varios tipos de rgbas baseado nas cores rosa, verde, e azul.
 
-No projeto tentei utilizar boas práticas de desenvolvimento, como separação de componentes, para assim facilitar a reutilização em múltiplos arquivos, e também  trabalahando com biblioteca externa com datas e horas.
+No projeto tentei utilizar boas práticas de desenvolvimento, como separação de componentes, para assim facilitar a reutilização em múltiplos arquivos, e também  trabalahando com biblioteca externa com datas e horas e teste funcionais.
 
 
 
